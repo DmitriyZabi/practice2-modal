@@ -1,0 +1,7 @@
+@import '~normalize.css';
+@import '~bootstrap/dist/css/bootstrap';
+@import 'fonts.css';
+
+body {
+  font-family: 'OpenSans-Regular', sans-serif;
+}
