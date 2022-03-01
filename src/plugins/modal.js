@@ -70,13 +70,11 @@ $.modal = function (options) {
     },
     close() {
       isClosing = true
-      options.beforeClose ? options.beforeClose(isClosing) : null
       $modal.classList.remove('open')
       $modal.classList.add('hide')
       setTimeout(() => {
         $modal.classList.remove('hide')
         isClosing = false
-        options.beforeClose ? options.beforeClose(isClosing) : null
         options.onClose ? options.onClose() : null
       }, ANIMATION_SPEED)
     },

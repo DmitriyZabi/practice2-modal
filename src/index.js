@@ -55,6 +55,12 @@ const priceModal = $.modal({
       },
     },
   ],
+  onOpen() {
+    console.log('onOpen event')
+  },
+  onClose() {
+    console.log('onClose event')
+  },
 })
 window.priceModal = priceModal
 

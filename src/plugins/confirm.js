@@ -25,6 +25,7 @@ $.confirm = function (options) {
       ],
       onClose() {
         modal.destroy()
+        console.log('onClode event')
       },
     })
     setTimeout(() => {
